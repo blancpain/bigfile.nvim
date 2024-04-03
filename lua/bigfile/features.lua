@@ -88,10 +88,10 @@ feature("illuminate", {
   end,
 })
 
-feature("indent_blankline", {
+feature("indent-blankline", {
   disable = function(_)
     pcall(function()
-      require("indent_blankline.commands").disable()
+      require("ibl").setup_buffer(0, { enabled = false })
     end)
   end,
 })
